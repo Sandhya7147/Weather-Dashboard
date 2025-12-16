@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+ 
+  <head>
+    <meta charset="utf-8" />
+    <title>☔️ Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#weather-details">Weather Details</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+    
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="search" id="search">
+      <input id="city-name" name="city-name" class="city-name" placeholder="Enter a city name/airport code/latitude longitude">
+
+      <div class="cw">
+        <label for="type">Current Weather or Forecast?</label><br />
+        <select id="type">
+          <option value="Current Weather">Current Weather</option>
+          <option value="Forecast">Forecast</option>
+        </select>
+      </div>
+
+      <div id="days-container"></div>
+      <button class="submit" id="submit">Search</button>
+      <br />
+
+    </div>
+    <section id="weather-details">
+    </section>
+
+    <section id="about" class="about">
+      <div></div>
+      <div class="about-middle-card">
+        <div class="abouth">ABOUT</div> <br /><br />
+        This application tells you about the current weather/forecast of 
+        a particular city 
+      </div>
+      <div></div>
+    </section>
+    
+    <footer id="contact">
+      <h1>Connect:</h1> 
+      <address>    
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:sandhyaiitkgp7@gmail.com"> sandhyaiitkgp7@gmail.com</a><br />
+        <br />
+        <i class="fa-brands fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/sandhya7147/"> Sandhya S</a><br />
+        <br />
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/Sandhya7147"> Sandhya7147</a>
+      </address>
+    </footer>
+
+    <script type="module" src="/src/weather.js"></script>
+  </body>
+
+</html>
