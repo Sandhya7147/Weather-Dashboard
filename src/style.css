@@ -58,19 +58,7 @@ header{
     background-color:rgb(171, 129, 212);
     
 }
-.city-heading{
-    color:rgb(229, 233, 236);
-    font-weight: bold;
-}
 
-.table-heading{
-    color:black;
-    font-weight:bolder;
-    text-align: center;
-}
-.tabular{
-    display: grid;
-}
 
 .heading{
     display: grid;
@@ -80,6 +68,50 @@ header{
 }
 #weather-details{
     scroll-margin: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:black;
+}
+#weatherdetails{
+    background: linear-gradient(to right, skyblue, rgb(112, 112, 240));
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+#weatherdetails:hover{
+    transform: scale(1.1);
+}
+.place-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.formattedDate{
+    font-weight: bold;
+    
+}
+.icon-temp{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+.temp{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.desc{
+    font-size: 2rem;
+    text-align: center;
+}
+.other-det{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    text-align: center;
+    justify-content: center;
 }
 .content{
     display: grid;
@@ -96,24 +128,12 @@ header{
     color:Red;
     text-align:center;
 }
-.current{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-.cw{
-    display: flex;
-    flex-direction: column;
-}
-#days{
-    width:15rem;
-}
 
 .about{
     scroll-margin: 5rem;
     margin-top: 3rem;
     display:grid;
-    grid-template-columns: 2fr 2fr 2fr;  
+    grid-template-columns: 1fr 1fr 1fr;  
     grid-template-rows: 10rem;
 }
 .abouth{
