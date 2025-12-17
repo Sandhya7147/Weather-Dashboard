@@ -39,6 +39,20 @@ header{
     gap: 2rem;
     align-items: center;
 }
+#search-history{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.history-button{
+    border-color: aliceblue;
+    border-radius: 1rem;
+    padding:1rem;
+    color:aliceblue;
+    background:linear-gradient(to right, rgb(141, 170, 182), rgb(16, 16, 72));
+}
 
 .city-name{
     width: 20rem;
@@ -109,8 +123,8 @@ header{
 }
 
 .about-img{
-    width: 50%;   /* Adjust this percentage to make it smaller or larger */
-    height: auto; /* Keeps the proportions correct so it doesn't look squished */
+    width: 50%;
+    height: auto;
     display: block;
     margin: 10px auto;
 }
@@ -134,7 +148,7 @@ header{
     border-radius: 1rem;
     text-align:center;
     color: black;
-    background-color: rgb(199, 219, 228);
+    background: linear-gradient(to right, rgb(166, 194, 206), rgb(59, 116, 142));
     transition: transform 0.3s;
     
 }
@@ -142,7 +156,7 @@ header{
     transform: scale(1.1);
 }
 footer{
-    background-color:rgb(29, 22, 83);
+    background: linear-gradient(to right, rgb(95, 60, 199), rgb(28, 48, 147));
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
