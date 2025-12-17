@@ -17,11 +17,11 @@
         <li><a href="#search">Search</a></li>
         <li><a href="#weather-details">Weather Details</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#contact">Connect</a></li>
       </ul>
     </nav>
     
-    <header>
+    <header id="home">
       <h1>Weather Dashboard</h1>
     </header>
 
@@ -33,7 +33,7 @@
     </div>
     <section id="weather-details">
       <div></div>
-      <div id="weatherdetails"></div>
+      <div id="weatherdetails">Welcome! Check weather details</div>
       <div></div>
     </section>
 
@@ -44,22 +44,44 @@
         <div class="abouth">ABOUT</div> <br /><br />
         This application tells you about the current weather of 
         the user chosen city 
+        <br />
+        <img class="about-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F830%2F977%2Fnon_2x%2Fweather-icon-set-vector.jpg&f=1&nofb=1&ipt=bc95990c043e236fcdc40fce75d645b5f165b121c4ff52314e2292370b87450a" alt="weather">
       </div>
       <div></div>
     </section>
     
     <footer id="contact">
+      <br />
       <h1>Connect:</h1> 
-      <address>    
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:sandhyaiitkgp7@gmail.com"> sandhyaiitkgp7@gmail.com</a><br />
-        <br />
-        <i class="fa-brands fa-linkedin-in"></i>
-        <a href="https://www.linkedin.com/in/sandhya7147/"> Sandhya S</a><br />
-        <br />
-        <i class="fa-brands fa-github"></i>
-        <a href="https://github.com/Sandhya7147"> Sandhya7147</a>
+      <address>  
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <a target="_blank" rel="noopener" href="mailto:sandhyaiitkgp7@gmail.com"> sandhyaiitkgp7@gmail.com</a>
+        </div>  
+        <br /><br />
+        <div>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/sandhya7147/"> Sandhya S</a>
+        </div>
+        <br /><br />
+        <div>
+          <i class="fa-brands fa-github"></i>
+          <a target="_blank" rel="noopener" href="https://github.com/Sandhya7147"> Sandhya7147</a>
+        </div> 
       </address>
+      <div class="legal">
+        <span>Terms and Conditions</span> |
+        <span>Privacy Policy</span> |
+        <span>© 2025 Weather Dashboard</span>
+      </div>
+      <br /><br />
+      <a href="#home" id="top-button-cont">
+        <div></div><div></div><div></div>
+        <button class="top-button">TOP</button>
+        <div> </div><div></div><div></div>
+      </a>
+      
+      
     </footer>
 
     <script type="module" src="/src/weather.js"></script>

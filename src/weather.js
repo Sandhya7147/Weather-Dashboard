@@ -1,11 +1,8 @@
 const searchEl = document.getElementById('city-name');
-//const typeEl = document.getElementById('type');
 const container = document.getElementById('weatherdetails');
-//const daysContainer = document.getElementById('days-container');
 const submit_button = document.getElementById('submit');
-//handleType();
 submit_button.addEventListener('click',handleSearchClick);
-//typeEl.addEventListener('change',handleType);
+
 
 function addDiv(className,message){
     const newdiv = document.createElement("div");
@@ -29,6 +26,7 @@ function addElementCurrent(r){
     const wind=c.wind_kph;
     const press=c.pressure_mb;
     const name=r.location.name;
+    const region=r.location.region;
     const country=r.location.country;
     
     const date=r.location.localtime;
@@ -41,7 +39,7 @@ function addElementCurrent(r){
     };
     const formattedDate = dateObj.toLocaleDateString('en-US', options);
     
-    addDiv("place-name",`${name}, ${country}`);
+    addDiv("place-name",`${name}, ${region}, ${country}`);
     addDiv("date",formattedDate);
     const newDiv = document.createElement("div");
     newDiv.classList.add("icon-temp");
